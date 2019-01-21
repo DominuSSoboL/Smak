@@ -1,0 +1,153 @@
+.services {
+	padding: 60px 0 67px;
+}
+
+.title.title__services {
+	margin-bottom: 60px;
+}
+
+.services-icon-wraper {
+	& .services-icon {
+		border: 1px solid #fff;
+		background-color: #ffe600;
+		border-radius: 50%;
+		width: 108px;
+		margin: auto;
+		margin-bottom: 20px;
+		i {
+			font-size: 36px;
+			line-height: 108px;
+			color: #fff;
+		}
+	}
+	& h3 {
+		.font-bold(20px);
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		color: #000;
+	}
+	& p {
+		.font-light(16px);
+		color: #707070;
+	}
+}
+
+.services-icon-wraper:hover,
+.services-icon-wraper:focus {
+	& .services-icon {
+		border-color: #000;
+		background-color: #fff;	
+		i {
+			color: #ffe600;
+		}
+	}
+}
+
+/* Media */
+
+/*1200px*/
+@media screen and (max-width: 1200px){
+	.services {
+		padding: 50px 0 57px;
+	}
+	.services-icon-wraper {
+		& .services-icon {
+			width: 80px;
+			margin-bottom: 15px;
+			i {
+				font-size: 26px;
+				line-height: 80px;
+			}
+		}
+		& h3 {
+			.font-bold(20px);
+			margin-bottom: 22px;
+		}
+		& p {
+			.font-light(16px);
+		}
+	}
+}
+/*992px*/
+@media screen and (max-width: 992px){
+	.services {
+		padding: 35px 0 39px;
+	}
+	.services-icon-wraper {
+		margin-bottom: 40px;
+		& .services-icon {
+			width: 80px;
+			margin-bottom: 15px;
+			i {
+				font-size: 26px;
+				line-height: 80px;
+			}
+		}
+		& h3 {
+			.font-bold(16px);
+			margin-bottom: 22px;
+		}
+		& p {
+			.font-light(14px);
+			width: 80%;
+			margin: auto;
+		}
+	}
+}
+	
+/*768px*/
+@media screen and (max-width: 768px){
+	.services-icon-wraper {
+		margin-bottom: 40px;
+		& .services-icon {
+			width: 80px;
+			margin-bottom: 15px;
+			i {
+				font-size: 26px;
+				line-height: 80px;
+			}
+		}
+		& h3 {
+			.font-bold(16px);
+			margin-bottom: 22px;
+		}
+		& p {
+			.font-light(13px);
+			width: 50%;
+			margin: auto;
+		}
+	}
+}
+
+
+/*450px*/
+@media screen and (max-width: 500px){
+	.services {
+		padding: 30px 0 30px;
+	}
+	.services-icon-wraper {
+		margin-bottom: 20px;
+		& .services-icon {
+			width: 80px;
+			margin-bottom: 15px;
+			i {
+				font-size: 22px;
+				line-height: 80px;
+			}
+		}
+		& h3 {
+			.font-bold(15px);
+			margin-bottom: 22px;
+		}
+		& p {
+			.font-light(13px);
+			width: 60%;
+			margin: auto;
+		}
+	}
+	.title.title__services {
+		& p:last-child {
+			display: none;
+		}
+	}
+}

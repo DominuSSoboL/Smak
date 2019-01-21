@@ -1,0 +1,113 @@
+.clients {
+	padding: 65px 0 60px;
+}
+
+
+.nbs-flexisel-container {
+    position: relative;
+    max-width: 100%;
+}
+.nbs-flexisel-ul {
+    position: relative;
+    width: 99999px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;   
+    text-align: center;  
+    overflow: auto;
+}
+
+.nbs-flexisel-inner {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+    height: 150px;
+}
+.nbs-flexisel-item img {
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    z-index: 4;
+    bottom: 0;
+    transform: translateY(-50%);  
+    transition:  background-color 0.3s ease-in-out;
+    background: #ffe600;
+    color: #fff;     
+}
+
+.nbs-flexisel-nav-left {
+    left: 45%;
+}
+.nbs-flexisel-nav-left:before {
+    content: "<<";
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.nbs-flexisel-nav-right {
+    right: 45%;    
+}
+.nbs-flexisel-nav-right:before {
+    content: ">>";
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.nbs-flexisel-nav-left:hover,
+.nbs-flexisel-nav-right:hover,
+.nbs-flexisel-nav-left:focus,
+.nbs-flexisel-nav-right:focus {
+    background-color: lighten(#ffe600, 20%)
+}
+/* Media */
+
+/* 768px */
+@media screen and (max-width: 768px){
+	.nbs-flexisel-nav-left {
+    left: 42%;
+	}
+	.nbs-flexisel-nav-right {
+	   right: 42%;    
+	}
+}
+/* 500px */
+@media screen and (max-width: 500px){
+	.nbs-flexisel-nav-left {
+    left: 40%;
+	}
+	.nbs-flexisel-nav-right {
+	   right: 40%;    
+	}
+}
+
+/* 320px */
+@media screen and (max-width: 320px){
+	.nbs-flexisel-nav-left {
+    left: 35%;
+	}
+	.nbs-flexisel-nav-right {
+	   right: 35%;    
+	}
+}

@@ -1,0 +1,59 @@
+/* --------------- /базовые настройки ---------*/
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	height: 100%;
+	.font-regular;
+}
+header.page-header {
+	height: 100%;
+	clear: both;
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.transition {
+	transition: all 0.3s;
+}
+ul li {
+	list-style: none;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+button:hover,
+button:focus {
+	outline: none;
+}
+h1,
+button,
+.navbar-default .navbar-nav > li > a  {
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
+}
+
+h2::selection,
+h3::selection, 
+p::selection,
+.percentage::selection,
+text::selection {
+	background: #ffe600;
+	color: #fff;
+}
+
+h2::-moz-selection,
+h3::-moz-selection, 
+p::-moz-selection,
+.percentage::-moz-selection,
+text::-moz-selection {
+	background: #ffe600; 
+	color: #fff;
+}

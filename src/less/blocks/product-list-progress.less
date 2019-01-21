@@ -1,0 +1,60 @@
+.portfolio__products-list-progress {
+	padding: 65px 0;
+	background-color: #131a1d;
+}
+.products-list-progress-title {
+	h2, p  {
+		color: #fff;
+	}
+	
+}
+.products-list-progress__counter-items {
+	color: #fff;
+	.counter-items__box {
+		border: 1px solid #ffe600;
+		padding: 37px 0;
+		span {
+			.font-bold(40px);
+			display: block;
+		}
+		p {
+			.font-regular(16px);
+			text-transform: uppercase;
+			color: #ffe600;
+		}		
+	}
+}
+
+/*1200px*/
+@media screen and (max-width: 1200px){
+	.products-list-progress__counter-items {
+		.counter-items__box {
+			padding: 27px 0;
+			span {
+				.font-bold(20px);
+			}
+			p {
+				.font-regular(14px);
+			}		
+		}
+	}
+}
+
+/*768px*/
+@media screen and (max-width: 768px){
+	.portfolio__products-list-progress {
+		padding: 25px 0;
+	}
+	.products-list-progress__counter-items {
+		margin-bottom: 20px;
+		.counter-items__box {
+			padding: 17px 0;
+			span {
+				.font-bold(16px);
+			}
+			p {
+				.font-regular(13px);
+			}		
+		}
+	}
+}

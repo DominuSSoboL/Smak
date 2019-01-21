@@ -1,0 +1,79 @@
+.scills {
+	padding: 65px 0;
+	background-color: #131a1d;
+}
+.title__scills {
+	margin-bottom: 60px;
+	h2, p {
+		color: #fff;
+	}
+}
+.progress-cirkle-item {
+	text-align: center;
+	h3 {
+		.font-regular(20px);
+		color: #ffe600;
+	}
+	svg.radial-progress {
+	  height: auto;
+	  max-width: 200px;
+	  padding: 1em;
+	  transform: rotate(-90deg);
+	  width: 100%;
+	}
+
+	svg.radial-progress circle {
+	  fill: rgba(0,0,0,0);
+	  stroke: #fff;
+	  stroke-dashoffset: 219.91148575129; /* Circumference */
+	  stroke-width: 3;
+	}
+
+	svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+	svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+	svg.radial-progress text {
+	  fill: #ffe600;
+	  .font-light(25px);
+	  text-anchor: middle;
+	  transform: matrix(0, 1, -1, 0, 75, 0);
+	}
+
+	svg.radial-progress circle { stroke: #ffe600; }
+}
+
+
+/* Media */
+
+/**1200px**/
+@media screen and (max-width: 1200px){
+
+}
+
+/**992px**/
+@media screen and (max-width: 992px){
+	.progress-cirkle-item {
+		h3 {
+			.font-regular(16px);
+			margin-top: 0;
+		}
+		svg.radial-progress text {
+		  .font-light(16px);
+	  	transform: matrix(0, 1, -1, 0, 80, 0);
+		}
+
+	}
+}
+
+/**768px**/
+@media screen and (max-width: 768px){
+	.progress-cirkle-item {
+			
+			svg.radial-progress text {
+			  .font-light(16px);
+		  	transform: matrix(0, 1, -1, 0, 78, 0);
+			}
+
+	}
+}

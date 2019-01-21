@@ -1,0 +1,85 @@
+/** Other style sheets **/
+.page-footer {
+	position: relative;
+	padding: 25px 0 0;
+	margin: 0;
+	background-color: #131316;
+	p {
+		.font-light(16px);
+		color: #fff;
+		letter-spacing: 1px;
+		margin-bottom: 25px;
+		span {
+			color: #ffe600;
+		}
+	}
+	ul {
+		padding: 0;
+		margin: 0 0 32px;
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0px 7.5px;
+			a {				
+				i {
+					font-size: 17px;
+					color: #fff;
+					transition: color 0.3s ease-in-out;
+				}
+				&:hover,
+				&:focus {
+					i {						
+						color: #ffe600;
+					}
+				}
+			}
+		}
+	}
+	.box-button-down-top {
+		width: 100%;
+		margin: auto;
+		bottom: 0;
+		transform: rotate(180deg);
+	}
+	.page-title__button-down {
+		position: relative;
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		background-color: #ffe600;
+		transition: background-color 0.3s ease-in-out;
+		&::after,
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			border-left: 5px solid #fff;
+			border-bottom: 5px solid #fff;
+			width: 20px;
+			height: 20px;
+			right: 50% - 18px;
+			transform: rotate(-45deg);
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		}
+		&::before {
+			top: 50% - 30px;
+			animation-name: downArrowButtonDown;
+			animation-timing-function: ease-in;
+		}		
+		&::after {
+			top: 50% - 10px;
+			animation-name: downArrowButtonDownTwo;
+			animation-timing-function: ease-in-out;
+		}
+		&:hover,
+		&:focus {
+			cursor: pointer;
+			background-color: lighten(#ffe600, 20%);
+			&::before,
+			&::after {
+				animation-play-state: paused;
+			}
+		}
+	}
+}

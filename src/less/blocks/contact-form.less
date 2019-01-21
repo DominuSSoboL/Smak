@@ -1,0 +1,104 @@
+.contact-form {
+	padding: 65px 0;
+	background-color: #131a1d;
+}
+.title__contact-form {
+	margin-bottom: 60px;
+	h2, p {
+		color: #fff;
+	}
+}
+form#contactFormBottom {
+	.name input,
+	.email input,
+	.subject input,
+	.message textarea#massage {
+		.font-light(15px);
+		padding: 20px 0 20px 17px;
+		color: #fff;
+		width: 100%;
+		margin-bottom: 30px;
+		border: 1px solid #fff;
+		box-shadow: none;
+		background-color: transparent;
+		transition: border-color 0.3s ease-in-out;
+		&:hover,
+		&:focus {
+			border-color: #ffe600;
+			outline: none;
+		}
+	}
+	.button {
+		text-align: center;
+		button {
+			.font-bold(15px);
+			color: #161f32;
+			background-color: #ffe600;
+			line-height: 58px;
+			padding: 0px 58px;
+			border: none;
+			transition: background-color 0.3s ease-in-out;
+			&:hover,
+			&focus {
+				background-color: lighten(#ffe600, 20%);
+			}
+		}
+	}
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;} /* Firefox 19+ */
+:-moz-placeholder           {color:#fff;} /* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+
+/*Media*/
+
+/*1200px*/
+@media screen and (max-width: 1200px){
+	.contact-form {
+		padding: 55px 0;
+	}
+	.title__contact-form {
+		margin-bottom: 50px;
+	}
+	form#contactFormBottom {
+		.name input,
+		.email input,
+		.subject input,
+		.message textarea#massage {
+			.font-light(15px);
+			padding: 18px 0 18px 15px;
+			margin-bottom: 28px;
+		}
+	}
+}
+
+/*992px*/
+@media screen and (max-width: 992px){
+	.contact-form {
+		padding: 45px 0;
+	}	
+	.title__contact-form {
+		margin-bottom: 30px;
+	}
+	form#contactFormBottom {
+		.name input,
+		.email input,
+		.subject input,
+		.message textarea#massage {
+			.font-light(14px);
+			padding: 10px 0 10px 10px;
+			letter-spacing: 1px;
+			margin-bottom: 20px;
+		}
+
+
+		.button {
+			text-align: center;
+			button {
+				.font-bold(14px);
+				line-height: 38px;
+				padding: 0px 28px;
+			}
+		}
+	}
+}
